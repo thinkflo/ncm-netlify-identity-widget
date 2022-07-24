@@ -88,15 +88,15 @@ store.login = action(function login(email, password) {
   store.startAction();
   return store.gotrue
     .login(email, password, store.remember)
-    .then((user) =>
-      action(user => {
+    .then(
+      action((user) => {
         store.user = user;
         store.modal.page = "user";
         store.invite_token = null;
         if (store.email_change_token) {
           store.doEmailChange();
         }
-        store.saving = false;  
+        store.saving = false;
       })
     )
     .catch(store.setError);
