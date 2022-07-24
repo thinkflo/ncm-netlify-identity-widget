@@ -137,10 +137,10 @@ store.signup = action(function signup(
   return store.gotrue
     .signup(email, password, { 
       full_name: name,
-      phone_number: metadata.phone_number,
-      dealer_code: metadata.dealer_code,
-      representative_code: metadata.representative_code,
-      company_name: metadata.company_name
+      phone_number: phone_number,
+      dealer_code: dealer_code,
+      representative_code: representative_code,
+      company_name: company_name
     })
     .then(
       action(() => {
