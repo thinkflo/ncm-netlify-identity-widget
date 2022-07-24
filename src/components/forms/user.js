@@ -82,7 +82,7 @@ export default class UserForm extends Component {
                   required
                   oninput={this.handleInput}
                 />
-                <div className="inputFieldIcon inputFieldName" />
+                <div className="inputFieldIcon inputFieldDealer" />
               </label>
             )}
             {page.representative_code && (
@@ -100,7 +100,7 @@ export default class UserForm extends Component {
                   required
                   oninput={this.handleInput}
                 />
-                <div className="inputFieldIcon inputFieldName" />
+                <div className="inputFieldIcon inputFieldRep" />
               </label>
             )}
         </div>
@@ -122,7 +122,7 @@ export default class UserForm extends Component {
                     required
                     oninput={this.handleInput}
                   />
-                  <div className="inputFieldIcon inputFieldName" />
+                  <div className="inputFieldIcon inputFieldCompany" />
                 </label>
             )}
             {page.phone_number && (
@@ -140,7 +140,7 @@ export default class UserForm extends Component {
                     required
                     oninput={this.handleInput}
                   />
-                  <div className="inputFieldIcon inputFieldName" />
+                  <div className="inputFieldIcon inputFieldPhone" />
                 </label>
               )}
           </div>
