@@ -4816,7 +4816,7 @@
         },
         signup: {
           signup: !0,
-          button: "Sign up",
+          button: "Register",
           button_saving: "Signing Up",
           name: !0,
           email: !0,
@@ -5101,7 +5101,7 @@
                               className: "btn btnHeader " + (t.signup ? "active" : ""),
                               onclick: this.linkHandler("signup")
                             },
-                            "Sign up"
+                            "Register"
                           ),
                         !s &&
                           (0, u.h)(
