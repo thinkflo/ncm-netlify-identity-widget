@@ -65,7 +65,15 @@ class App extends Component {
   clearSiteURL = (url) => this.props.store.clearSiteURL();
   clearStoreError = () => this.props.store.setError();
   handleExternalLogin = (provider) => this.props.store.externalLogin(provider);
-  handleUser = ({ name, email, password }) => {
+  handleUser = ({ 
+    name, 
+    email, 
+    password, 
+    phone_number, 
+    dealer_code,
+    representative_code,
+    company_name 
+  }) => {
     const { store } = this.props;
 
     switch (store.modal.page) {
@@ -73,7 +81,15 @@ class App extends Component {
         store.login(email, password);
         break;
       case "signup":
-        store.signup(name, email, password);
+        store.signup( 
+          name, 
+          email, 
+          password, 
+          phone_number, 
+          dealer_code,
+          representative_code,
+          company_name 
+        );
         break;
       case "amnesia":
         store.requestPasswordRecovery(email);
