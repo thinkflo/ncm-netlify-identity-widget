@@ -98,12 +98,6 @@
   }
 }
 
-@media (min-width: 640px) {
-  .modalDialog {
-    max-width: 640px;
-  }
-}
-
 @media (min-width: 480px) {
   .modalContainer::before {
     background-color: var(--baseColor);
@@ -542,5 +536,11 @@
   h3 {
     padding-top: 1em;
     text-align: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .modalDialog {
+    max-width: 640px;
   }
 }
