@@ -88,21 +88,17 @@ store.login = action(function login(email, password) {
   store.startAction();
   return store.gotrue
     .login(email, password, store.remember)
-    .then((user) => {
-      if (user?.app_metadata?.roles?.includes("advisor")) {
-        action((user) => {
-            store.user = user;
-            store.modal.page = "user";
-            store.invite_token = null;
-            if (store.email_change_token) {
-              store.doEmailChange();
-            }
-            store.saving = false;  
-        })
-      } else {
-        store.logout()
-      }
-    })
+    .then((user) =>
+      action((user) => {
+        store.user = user;
+        store.modal.page = "user";
+        store.invite_token = null;
+        if (store.email_change_token) {
+          store.doEmailChange();
+        }
+        store.saving = false;  
+      })
+    )
     .catch(store.setError);
 });
 
