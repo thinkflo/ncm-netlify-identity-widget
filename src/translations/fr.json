@@ -21,6 +21,7 @@
   "site_url_label": "Entrez l'URL de votre site Netlify",
   "site_url_placeholder": "URL de votre site Netlify",
   "site_url_submit": "Définir l'URL du site",
+  "message_register": "Inscrivez-vous pour accéder à notre portail des conseillers",
   "message_confirm": "Un message de confirmation a été envoyé à votre adresse électronique, cliquez sur le lien pour continuer.",
   "message_password_mail": "Nous avons envoyé un e-mail de récupération à votre compte, suivez le lien qui s'y trouve pour réinitialiser votre mot de passe.",
   "message_email_changed": "Votre adresse e-mail a été mise à jour !",

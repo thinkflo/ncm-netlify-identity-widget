@@ -74,6 +74,7 @@ export default class Modal extends Component {
                     {t("log_in")}
                   </button>
                 )}
+                ${page.signup ? <h2>{t("message_register")}</h2> : ""}
               </div>
             )}
             {page.title && (

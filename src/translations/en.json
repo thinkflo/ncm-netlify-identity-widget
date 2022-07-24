@@ -21,6 +21,7 @@
   "site_url_label": "Enter your Netlify Site URL",
   "site_url_placeholder": "URL of your Netlify site",
   "site_url_submit": "Set site's URL",
+  "message_register": "Register for access to our Advisor Portal",
   "message_confirm": "A confirmation message was sent to your email, click the link there to continue.",
   "message_password_mail": "We've sent a recovery email to your account, follow the link there to reset your password.",
   "message_email_changed": "Your email address has been updated!",
