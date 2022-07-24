@@ -88,6 +88,14 @@ store.login = action(function login(email, password) {
   store.startAction();
   return store.gotrue
     .login(email, password, store.remember)
+    .then((user) => {
+      if (user?.app_metadata?.roles?.includes("advisor")) {
+        console.log('user is advisor')
+      } else {
+        console.log('user is not advisor')
+        console.dir(user);
+      }
+    })
     .then((user) =>
       action((user) => {
         store.user = user;
