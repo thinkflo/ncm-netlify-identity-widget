@@ -70,14 +70,14 @@ export default class UserForm extends Component {
             {page.dealer_code && (
               <label>
                 <span className="visuallyHidden">
-                  {t("form_name_placeholder")}
+                  {t("form_dealer_placeholder")}
                 </span>
                 <input
                   className="formControl"
                   type="name"
                   name="dealer_code"
                   value={dealer_code}
-                  placeholder="Dealer Code"
+                  placeholder={t("form_dealer_placeholder")}
                   autocapitalize="off"
                   required
                   oninput={this.handleInput}
@@ -88,14 +88,14 @@ export default class UserForm extends Component {
             {page.representative_code && (
               <label>
                 <span className="visuallyHidden">
-                  {t("form_name_placeholder")}
+                  {t("form_rep_placeholder")}
                 </span>
                 <input
                   className="formControl"
                   type="name"
                   name="representative_code"
                   value={representative_code}
-                  placeholder="Rep Code"
+                  placeholder={t("form_rep_placeholder")}
                   autocapitalize="off"
                   required
                   oninput={this.handleInput}
@@ -110,14 +110,14 @@ export default class UserForm extends Component {
             {page.company_name && (
                 <label>
                   <span className="visuallyHidden">
-                    {t("form_name_placeholder")}
+                    {t("form_company_placeholder")}
                   </span>
                   <input
                     className="formControl"
                     type="name"
                     name="company_name"
                     value={company_name}
-                    placeholder="Company"
+                    placeholder={t("form_company_placeholder")}
                     autocapitalize="off"
                     required
                     oninput={this.handleInput}
@@ -128,14 +128,14 @@ export default class UserForm extends Component {
             {page.phone_number && (
                 <label>
                   <span className="visuallyHidden">
-                    {t("form_phone_number_placeholder")}
+                    {t("form_phone_placeholder")}
                   </span>
                   <input
                     className="formControl"
                     type="name"
                     name="phone_number"
                     value={phone_number}
-                    placeholder="Phone"
+                    placeholder={t("form_phone_placeholder")}
                     autocapitalize="off"
                     required
                     oninput={this.handleInput}
