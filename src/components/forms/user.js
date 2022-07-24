@@ -5,7 +5,15 @@ import Button from "./button";
 export default class UserForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", password: "" };
+    this.state = { 
+      name: "", 
+      email: "", 
+      password: "", 
+      phone_number: "", 
+      dealer_code: "",
+      representative_code: "",
+      company_name: ""
+    };
   }
 
   handleInput = (e) => {
@@ -19,7 +27,15 @@ export default class UserForm extends Component {
 
   render() {
     const { page, message, saving, namePlaceholder, t } = this.props;
-    const { name, email, password } = this.state;
+    const { 
+      name, 
+      email, 
+      password, 
+      phone_number, 
+      dealer_code,
+      representative_code,
+      company_name      
+    } = this.state;
 
     return (
       <form
@@ -41,6 +57,86 @@ export default class UserForm extends Component {
                 placeholder={
                   namePlaceholder ? namePlaceholder : t("form_name_label")
                 }
+                autocapitalize="off"
+                required
+                oninput={this.handleInput}
+              />
+              <div className="inputFieldIcon inputFieldName" />
+            </label>
+          </div>
+        )}
+        {page.phone_number && (
+          <div className="formGroup">
+            <label>
+              <span className="visuallyHidden">
+                {t("form_phone_number_placeholder")}
+              </span>
+              <input
+                className="formControl"
+                type="name"
+                name="phone_number"
+                value={phone_number}
+                placeholder="Phone number"
+                autocapitalize="off"
+                required
+                oninput={this.handleInput}
+              />
+              <div className="inputFieldIcon inputFieldName" />
+            </label>
+          </div>
+        )}
+        {page.dealer_code && (
+          <div className="formGroup">
+            <label>
+              <span className="visuallyHidden">
+                {t("form_name_placeholder")}
+              </span>
+              <input
+                className="formControl"
+                type="name"
+                name="dealer_code"
+                value={dealer_code}
+                placeholder="Dealer Code"
+                autocapitalize="off"
+                required
+                oninput={this.handleInput}
+              />
+              <div className="inputFieldIcon inputFieldName" />
+            </label>
+          </div>
+        )}
+        {page.representative_code && (
+          <div className="formGroup">
+            <label>
+              <span className="visuallyHidden">
+                {t("form_name_placeholder")}
+              </span>
+              <input
+                className="formControl"
+                type="name"
+                name="representative_code"
+                value={representative_code}
+                placeholder="Representative Code"
+                autocapitalize="off"
+                required
+                oninput={this.handleInput}
+              />
+              <div className="inputFieldIcon inputFieldName" />
+            </label>
+          </div>
+        )}
+        {page.company_name && (
+          <div className="formGroup">
+            <label>
+              <span className="visuallyHidden">
+                {t("form_name_placeholder")}
+              </span>
+              <input
+                className="formControl"
+                type="name"
+                name="company_name"
+                value={company_name}
+                placeholder="Company Name"
                 autocapitalize="off"
                 required
                 oninput={this.handleInput}

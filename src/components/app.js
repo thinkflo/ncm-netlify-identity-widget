@@ -25,6 +25,10 @@ const pages = {
     button_saving: "signing_up",
     name: true,
     email: true,
+    phone_number: true, 
+    dealer_code: true,
+    representative_code: true,
+    company_name: true,  
     password: "new-password",
     providers: true
   },
