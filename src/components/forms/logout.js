@@ -17,7 +17,7 @@ export default class LogoutForm extends Component {
         <p className="infoText">
           {t("logged_in_as")} <br />
           <span className="infoTextEmail">
-            {user.user_metadata.full_name ||
+            {
               user.user_metadata.name ||
               user.email}
           </span>
