@@ -95,7 +95,7 @@ export default class UserForm extends Component {
                   type="name"
                   name="representative_code"
                   value={representative_code}
-                  placeholder="Representative Code"
+                  placeholder="Rep Code"
                   autocapitalize="off"
                   required
                   oninput={this.handleInput}
@@ -117,7 +117,7 @@ export default class UserForm extends Component {
                     type="name"
                     name="company_name"
                     value={company_name}
-                    placeholder="Company Name"
+                    placeholder="Company"
                     autocapitalize="off"
                     required
                     oninput={this.handleInput}
@@ -135,7 +135,7 @@ export default class UserForm extends Component {
                     type="name"
                     name="phone_number"
                     value={phone_number}
-                    placeholder="Phone number"
+                    placeholder="Phone"
                     autocapitalize="off"
                     required
                     oninput={this.handleInput}

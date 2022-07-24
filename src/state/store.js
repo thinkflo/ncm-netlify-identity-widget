@@ -136,7 +136,7 @@ store.signup = action(function signup(
   store.startAction();
   return store.gotrue
     .signup(email, password, { 
-      full_name: `${name} of ${company_name} (${dealer_code}/${representative_code})`,
+      full_name: `${name}, ${company_name} (${dealer_code}/${representative_code}) - ${phone_number}`,
       name: name,
       phone_number: phone_number,
       dealer_code: dealer_code,
