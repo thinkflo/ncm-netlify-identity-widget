@@ -74,7 +74,6 @@ export default class Modal extends Component {
                     {t("log_in")}
                   </button>
                 )}
-                ${page.signup ? <h2>{t("message_register")}</h2> : ""}
               </div>
             )}
             {page.title && (
@@ -90,6 +89,9 @@ export default class Modal extends Component {
                   {t("site_url_title")}
                 </button>
               </div>
+            )}
+            {page.signup && (
+              <h2>{t("message_register")}</h2>
             )}
             {formattedError && (
               <div className="flashMessage error">
